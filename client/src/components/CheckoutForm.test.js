@@ -35,7 +35,7 @@ test("form shows success message on submit with form details", () => {
     fireEvent.click(checkoutBtn)
 
 
-    const checkoutMsg = screen.findByText(/your new green friends will be shipped to:/i)
+    const checkoutMsg = screen.findByText(/anytown, mn 56789/i)
     return expect(checkoutMsg).resolves.toBeInTheDocument()
 
 
